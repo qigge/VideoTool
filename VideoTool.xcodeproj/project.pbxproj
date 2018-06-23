@@ -13,6 +13,22 @@
 		21DB872B20DDE50000EFEC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DB872A20DDE50000EFEC79 /* Assets.xcassets */; };
 		21DB872E20DDE50000EFEC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DB872C20DDE50000EFEC79 /* LaunchScreen.storyboard */; };
 		21DB873120DDE50000EFEC79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB873020DDE50000EFEC79 /* main.m */; };
+		21DB873A20DDE56000EFEC79 /* ZQVideoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB873820DDE56000EFEC79 /* ZQVideoTool.m */; };
+		21DB873D20DDF4C500EFEC79 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21DB873C20DDF4C500EFEC79 /* 1.jpeg */; };
+		21DB873F20DDF4D500EFEC79 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21DB873E20DDF4D500EFEC79 /* 2.jpeg */; };
+		21DB874620DDF74300EFEC79 /* ZQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB874220DDF74300EFEC79 /* ZQPlayer.m */; };
+		21DB874720DDF74300EFEC79 /* ZQPlayerImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21DB874320DDF74300EFEC79 /* ZQPlayerImage.bundle */; };
+		21DB874820DDF74300EFEC79 /* ZQPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB874520DDF74300EFEC79 /* ZQPlayerMaskView.m */; };
+		21DB876320DDFA0800EFEC79 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB874B20DDFA0800EFEC79 /* MASCompositeConstraint.m */; };
+		21DB876420DDFA0800EFEC79 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB874E20DDFA0800EFEC79 /* MASConstraint.m */; };
+		21DB876520DDFA0800EFEC79 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875020DDFA0800EFEC79 /* MASConstraintMaker.m */; };
+		21DB876620DDFA0800EFEC79 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875220DDFA0800EFEC79 /* MASLayoutConstraint.m */; };
+		21DB876720DDFA0800EFEC79 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875620DDFA0800EFEC79 /* MASViewAttribute.m */; };
+		21DB876820DDFA0800EFEC79 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875820DDFA0800EFEC79 /* MASViewConstraint.m */; };
+		21DB876920DDFA0800EFEC79 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875A20DDFA0800EFEC79 /* NSArray+MASAdditions.m */; };
+		21DB876A20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875D20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		21DB876B20DDFA0800EFEC79 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB875F20DDFA0800EFEC79 /* View+MASAdditions.m */; };
+		21DB876C20DDFA0800EFEC79 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DB876220DDFA0800EFEC79 /* ViewController+MASAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,40 @@
 		21DB872D20DDE50000EFEC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DB872F20DDE50000EFEC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21DB873020DDE50000EFEC79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21DB873820DDE56000EFEC79 /* ZQVideoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQVideoTool.m; sourceTree = "<group>"; };
+		21DB873920DDE56000EFEC79 /* ZQVideoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQVideoTool.h; sourceTree = "<group>"; };
+		21DB873C20DDF4C500EFEC79 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		21DB873E20DDF4D500EFEC79 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		21DB874120DDF74300EFEC79 /* ZQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPlayer.h; sourceTree = "<group>"; };
+		21DB874220DDF74300EFEC79 /* ZQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPlayer.m; sourceTree = "<group>"; };
+		21DB874320DDF74300EFEC79 /* ZQPlayerImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZQPlayerImage.bundle; sourceTree = "<group>"; };
+		21DB874420DDF74300EFEC79 /* ZQPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPlayerMaskView.h; sourceTree = "<group>"; };
+		21DB874520DDF74300EFEC79 /* ZQPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPlayerMaskView.m; sourceTree = "<group>"; };
+		21DB874A20DDFA0800EFEC79 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		21DB874B20DDFA0800EFEC79 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		21DB874C20DDFA0800EFEC79 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		21DB874D20DDFA0800EFEC79 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		21DB874E20DDFA0800EFEC79 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		21DB874F20DDFA0800EFEC79 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		21DB875020DDFA0800EFEC79 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		21DB875120DDFA0800EFEC79 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		21DB875220DDFA0800EFEC79 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		21DB875320DDFA0800EFEC79 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		21DB875420DDFA0800EFEC79 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		21DB875520DDFA0800EFEC79 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		21DB875620DDFA0800EFEC79 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		21DB875720DDFA0800EFEC79 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		21DB875820DDFA0800EFEC79 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		21DB875920DDFA0800EFEC79 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		21DB875A20DDFA0800EFEC79 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		21DB875B20DDFA0800EFEC79 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		21DB875C20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		21DB875D20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		21DB875E20DDFA0800EFEC79 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		21DB875F20DDFA0800EFEC79 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		21DB876020DDFA0800EFEC79 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		21DB876120DDFA0800EFEC79 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		21DB876220DDFA0800EFEC79 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +108,10 @@
 		21DB872020DDE4FE00EFEC79 /* VideoTool */ = {
 			isa = PBXGroup;
 			children = (
+				21DB874920DDFA0800EFEC79 /* Masonry */,
+				21DB874020DDF74300EFEC79 /* ZQPlayer */,
+				21DB873720DDE54D00EFEC79 /* ImageToVideo */,
+				21DB873B20DDE61600EFEC79 /* Images */,
 				21DB872120DDE4FE00EFEC79 /* AppDelegate.h */,
 				21DB872220DDE4FE00EFEC79 /* AppDelegate.m */,
 				21DB872420DDE4FE00EFEC79 /* ViewController.h */,
@@ -69,6 +123,68 @@
 				21DB873020DDE50000EFEC79 /* main.m */,
 			);
 			path = VideoTool;
+			sourceTree = "<group>";
+		};
+		21DB873720DDE54D00EFEC79 /* ImageToVideo */ = {
+			isa = PBXGroup;
+			children = (
+				21DB873920DDE56000EFEC79 /* ZQVideoTool.h */,
+				21DB873820DDE56000EFEC79 /* ZQVideoTool.m */,
+			);
+			path = ImageToVideo;
+			sourceTree = "<group>";
+		};
+		21DB873B20DDE61600EFEC79 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				21DB873C20DDF4C500EFEC79 /* 1.jpeg */,
+				21DB873E20DDF4D500EFEC79 /* 2.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		21DB874020DDF74300EFEC79 /* ZQPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				21DB874120DDF74300EFEC79 /* ZQPlayer.h */,
+				21DB874220DDF74300EFEC79 /* ZQPlayer.m */,
+				21DB874320DDF74300EFEC79 /* ZQPlayerImage.bundle */,
+				21DB874420DDF74300EFEC79 /* ZQPlayerMaskView.h */,
+				21DB874520DDF74300EFEC79 /* ZQPlayerMaskView.m */,
+			);
+			path = ZQPlayer;
+			sourceTree = "<group>";
+		};
+		21DB874920DDFA0800EFEC79 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				21DB874A20DDFA0800EFEC79 /* MASCompositeConstraint.h */,
+				21DB874B20DDFA0800EFEC79 /* MASCompositeConstraint.m */,
+				21DB874C20DDFA0800EFEC79 /* MASConstraint+Private.h */,
+				21DB874D20DDFA0800EFEC79 /* MASConstraint.h */,
+				21DB874E20DDFA0800EFEC79 /* MASConstraint.m */,
+				21DB874F20DDFA0800EFEC79 /* MASConstraintMaker.h */,
+				21DB875020DDFA0800EFEC79 /* MASConstraintMaker.m */,
+				21DB875120DDFA0800EFEC79 /* MASLayoutConstraint.h */,
+				21DB875220DDFA0800EFEC79 /* MASLayoutConstraint.m */,
+				21DB875320DDFA0800EFEC79 /* Masonry.h */,
+				21DB875420DDFA0800EFEC79 /* MASUtilities.h */,
+				21DB875520DDFA0800EFEC79 /* MASViewAttribute.h */,
+				21DB875620DDFA0800EFEC79 /* MASViewAttribute.m */,
+				21DB875720DDFA0800EFEC79 /* MASViewConstraint.h */,
+				21DB875820DDFA0800EFEC79 /* MASViewConstraint.m */,
+				21DB875920DDFA0800EFEC79 /* NSArray+MASAdditions.h */,
+				21DB875A20DDFA0800EFEC79 /* NSArray+MASAdditions.m */,
+				21DB875B20DDFA0800EFEC79 /* NSArray+MASShorthandAdditions.h */,
+				21DB875C20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				21DB875D20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				21DB875E20DDFA0800EFEC79 /* View+MASAdditions.h */,
+				21DB875F20DDFA0800EFEC79 /* View+MASAdditions.m */,
+				21DB876020DDFA0800EFEC79 /* View+MASShorthandAdditions.h */,
+				21DB876120DDFA0800EFEC79 /* ViewController+MASAdditions.h */,
+				21DB876220DDFA0800EFEC79 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DB873F20DDF4D500EFEC79 /* 2.jpeg in Resources */,
 				21DB872E20DDE50000EFEC79 /* LaunchScreen.storyboard in Resources */,
+				21DB873D20DDF4C500EFEC79 /* 1.jpeg in Resources */,
 				21DB872B20DDE50000EFEC79 /* Assets.xcassets in Resources */,
 				21DB872920DDE4FE00EFEC79 /* Main.storyboard in Resources */,
+				21DB874720DDF74300EFEC79 /* ZQPlayerImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DB876420DDFA0800EFEC79 /* MASConstraint.m in Sources */,
+				21DB876720DDFA0800EFEC79 /* MASViewAttribute.m in Sources */,
+				21DB876C20DDFA0800EFEC79 /* ViewController+MASAdditions.m in Sources */,
+				21DB876920DDFA0800EFEC79 /* NSArray+MASAdditions.m in Sources */,
+				21DB874620DDF74300EFEC79 /* ZQPlayer.m in Sources */,
+				21DB876820DDFA0800EFEC79 /* MASViewConstraint.m in Sources */,
+				21DB876620DDFA0800EFEC79 /* MASLayoutConstraint.m in Sources */,
+				21DB873A20DDE56000EFEC79 /* ZQVideoTool.m in Sources */,
+				21DB874820DDF74300EFEC79 /* ZQPlayerMaskView.m in Sources */,
+				21DB876B20DDFA0800EFEC79 /* View+MASAdditions.m in Sources */,
+				21DB876320DDFA0800EFEC79 /* MASCompositeConstraint.m in Sources */,
+				21DB876A20DDFA0800EFEC79 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				21DB876520DDFA0800EFEC79 /* MASConstraintMaker.m in Sources */,
 				21DB872620DDE4FE00EFEC79 /* ViewController.m in Sources */,
 				21DB873120DDE50000EFEC79 /* main.m in Sources */,
 				21DB872320DDE4FE00EFEC79 /* AppDelegate.m in Sources */,
@@ -285,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VideoTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VideoTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

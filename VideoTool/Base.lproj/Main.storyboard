@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7nO-Bf-Tna"/>
+                        <viewControllerLayoutGuide type="bottom" id="9mW-Rk-4mq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8U-Dh-fH2" customClass="ZQPlayerMaskView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGK-Ce-L4R">
+                                <rect key="frame" x="38" y="395" width="77" height="30"/>
+                                <state key="normal" title="合成视频一"/>
+                                <connections>
+                                    <action selector="hcVideo1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lG7-i6-wEw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNJ-Hm-5sh">
+                                <rect key="frame" x="261" y="395" width="77" height="30"/>
+                                <state key="normal" title="合成视频一"/>
+                                <connections>
+                                    <action selector="hcVideo2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rag-tC-Oso"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDU-Rn-mhJ">
+                                <rect key="frame" x="130" y="446" width="116" height="30"/>
+                                <state key="normal" title="2张图片合成视频"/>
+                                <connections>
+                                    <action selector="twoImageToVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFf-EK-hcE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Off-fG-hTv">
+                                <rect key="frame" x="26" y="251" width="100" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DQy-Sk-4fq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hTz-ax-IEc">
+                                <rect key="frame" x="249" y="251" width="100" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RAz-U2-8Tx"/>
+                                    <constraint firstAttribute="width" secondItem="hTz-ax-IEc" secondAttribute="height" multiplier="100:133" id="yOb-Af-tyP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-eu-DiN">
+                                <rect key="frame" x="141" y="504" width="92" height="30"/>
+                                <state key="normal" title="拼接合成视频"/>
+                                <connections>
+                                    <action selector="hcTwoVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gy2-DU-hdL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="yVg-eu-DiN" firstAttribute="centerX" secondItem="U8U-Dh-fH2" secondAttribute="centerX" id="3Aa-qQ-mBC"/>
+                            <constraint firstItem="yVg-eu-DiN" firstAttribute="top" secondItem="wDU-Rn-mhJ" secondAttribute="bottom" constant="28" id="5co-56-OCr"/>
+                            <constraint firstItem="U8U-Dh-fH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bby-2P-oGY"/>
+                            <constraint firstItem="U8U-Dh-fH2" firstAttribute="top" secondItem="7nO-Bf-Tna" secondAttribute="bottom" id="Cac-hw-Z6L"/>
+                            <constraint firstAttribute="trailing" secondItem="U8U-Dh-fH2" secondAttribute="trailing" id="LTG-Mh-sBu"/>
+                            <constraint firstItem="hTz-ax-IEc" firstAttribute="top" secondItem="U8U-Dh-fH2" secondAttribute="bottom" constant="20" id="PbJ-bH-gv3"/>
+                            <constraint firstItem="QNJ-Hm-5sh" firstAttribute="centerX" secondItem="hTz-ax-IEc" secondAttribute="centerX" id="Q2f-zw-dQc"/>
+                            <constraint firstItem="Off-fG-hTv" firstAttribute="top" secondItem="U8U-Dh-fH2" secondAttribute="bottom" constant="20" id="URM-Zb-fY6"/>
+                            <constraint firstItem="QNJ-Hm-5sh" firstAttribute="top" secondItem="hTz-ax-IEc" secondAttribute="bottom" constant="10" id="Xr6-Is-nLt"/>
+                            <constraint firstItem="Off-fG-hTv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Yrm-F0-Cob"/>
+                            <constraint firstItem="tGK-Ce-L4R" firstAttribute="top" secondItem="Off-fG-hTv" secondAttribute="bottom" constant="10" id="dQt-m6-zhJ"/>
+                            <constraint firstItem="Off-fG-hTv" firstAttribute="bottom" secondItem="hTz-ax-IEc" secondAttribute="bottom" id="eVX-7x-I4a"/>
+                            <constraint firstItem="wDU-Rn-mhJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ggR-BL-BNS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hTz-ax-IEc" secondAttribute="trailing" constant="10" id="nht-e4-Z1t"/>
+                            <constraint firstItem="Off-fG-hTv" firstAttribute="centerX" secondItem="tGK-Ce-L4R" secondAttribute="centerX" id="nvf-Dn-GUU"/>
+                            <constraint firstAttribute="bottom" secondItem="U8U-Dh-fH2" secondAttribute="bottom" constant="436" id="t3S-wo-e0L"/>
+                            <constraint firstItem="wDU-Rn-mhJ" firstAttribute="top" secondItem="tGK-Ce-L4R" secondAttribute="bottom" constant="21" id="yax-FM-jZi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="player" destination="U8U-Dh-fH2" id="yjg-wr-niD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1589.5999999999999" y="-363.86806596701655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.jpeg" width="195" height="260"/>
+        <image name="2.jpeg" width="448" height="672"/>
+    </resources>
 </document>
