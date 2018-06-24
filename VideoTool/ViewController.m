@@ -41,7 +41,15 @@
     }];
 }
 - (IBAction)twoImageToVideo:(id)sender {
+    UIImage *image = [UIImage imageNamed:@"1.jpeg"];
+    ZQVideoModel *model1 = [[ZQVideoModel alloc] initWithImage:image length:5];
     
+    UIImage *image2 = [UIImage imageNamed:@"2.jpeg"];
+    ZQVideoModel *model2 = [[ZQVideoModel alloc] initWithImage:image2 length:5];
+    
+    [ZQVideoTool makeVideoWithModels:@[model1,model2] size:CGSizeMake(200, 300) completionHandler:^(NSURL *filePath) {
+        [self.player playWithVideoUrl:filePath.relativePath];
+    }];
 }
 - (IBAction)hcTwoVideo:(id)sender {
     NSMutableArray *videos = [NSMutableArray array];

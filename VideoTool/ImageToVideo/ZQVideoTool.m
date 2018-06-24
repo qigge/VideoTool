@@ -76,12 +76,13 @@
     int __block frame = 0;
     NSInteger __block idx = 0;
     int32_t fps = 30;
+    CMTime __block startTime = CMTimeMake(0, fps);
     [writerInput requestMediaDataWhenReadyOnQueue:dispatchQueue usingBlock:^{
-        while ([writerInput isReadyForMoreMediaData]) {
+        if ([writerInput isReadyForMoreMediaData]) {
             ZQVideoModel *model = models[idx];
             CVPixelBufferRef buffer = [self pixelBufferFromCGImage:model.image.CGImage size:size];
-            CMTime presentTime = CMTimeMake(frame++, fps);
-            [adaptor appendPixelBuffer:buffer withPresentationTime:presentTime];
+            [adaptor appendPixelBuffer:buffer withPresentationTime:startTime];
+            startTime = CMTimeAdd(startTime, CMTimeMake(1, fps));
             CFRelease(buffer);
             if (frame >= model.length * fps) {
                 frame = 0;
