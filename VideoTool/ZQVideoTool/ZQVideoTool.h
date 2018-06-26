@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UIImage *image;
 
+
 @property (nonatomic, assign) NSTimeInterval length;
 
 - (instancetype)initWithImage:(UIImage *)image length:(NSTimeInterval)length;

@@ -110,7 +110,7 @@
 			children = (
 				21DB874920DDFA0800EFEC79 /* Masonry */,
 				21DB874020DDF74300EFEC79 /* ZQPlayer */,
-				21DB873720DDE54D00EFEC79 /* ImageToVideo */,
+				21DB873720DDE54D00EFEC79 /* ZQVideoTool */,
 				21DB873B20DDE61600EFEC79 /* Images */,
 				21DB872120DDE4FE00EFEC79 /* AppDelegate.h */,
 				21DB872220DDE4FE00EFEC79 /* AppDelegate.m */,
@@ -125,13 +125,13 @@
 			path = VideoTool;
 			sourceTree = "<group>";
 		};
-		21DB873720DDE54D00EFEC79 /* ImageToVideo */ = {
+		21DB873720DDE54D00EFEC79 /* ZQVideoTool */ = {
 			isa = PBXGroup;
 			children = (
 				21DB873920DDE56000EFEC79 /* ZQVideoTool.h */,
 				21DB873820DDE56000EFEC79 /* ZQVideoTool.m */,
 			);
-			path = ImageToVideo;
+			path = ZQVideoTool;
 			sourceTree = "<group>";
 		};
 		21DB873B20DDE61600EFEC79 /* Images */ = {

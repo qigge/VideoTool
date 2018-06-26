@@ -48,6 +48,7 @@
     ZQVideoModel *model2 = [[ZQVideoModel alloc] initWithImage:image2 length:5];
     
     [ZQVideoTool makeVideoWithModels:@[model1,model2] size:CGSizeMake(200, 300) completionHandler:^(NSURL *filePath) {
+        NSLog(@"%@",filePath);
         [self.player playWithVideoUrl:filePath.relativePath];
     }];
 }
