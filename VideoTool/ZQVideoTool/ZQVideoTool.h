@@ -27,7 +27,17 @@
  *@return UIImage 图片
  */
 + (UIImage *)getImageFromVideo:(AVAsset *)video time:(CMTime)time;
-/** 从若干图片中 制作成指定长度的视频
+
+/**
+ 从图片中获取CVPixelBufferRef
+
+ @param image 图片
+ @param size 大小
+ @return CVPixelBufferRef
+ */
++ (CVPixelBufferRef)pixelBufferFromCGImage:(CGImageRef)image size:(CGSize)size;
+
+/** 从若干图片中 制作成指定长度的视频（默认fps为24）
  *@param models 图片,长度模型数组
  *@param size 视频大小
  *@param handler 完成后回调
